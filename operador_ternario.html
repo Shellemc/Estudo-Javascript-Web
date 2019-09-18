@@ -1,0 +1,35 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operador ternario</title>
+</head>
+
+<body>
+
+    <h1>Operador ternario</h1>
+
+    <script>
+
+        var nota = prompt('Digite a nota do aluno: ') //nota do aluno
+        var faltas = prompt('Digite a quantidade de faltas: ') //faltas do aluno
+
+
+        var media = 7 //media para ser aprovado
+        var faltas_maximas = 15
+
+
+        /*
+        var resultado = (condição) ? verdadeiro : falso
+        */
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+        document.write(resultado)
+
+
+    </script>
+
+</body>
+
+</html>

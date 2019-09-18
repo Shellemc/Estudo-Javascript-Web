@@ -1,0 +1,44 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <h1>Funções String</h1>
+
+    <script>
+       //propriedade length
+       var str = 'jorge sant ana'.length
+       var idx = 'jorge sant ana'.charAt(7)
+       var ocorr = 'jorge sant ana'.indexOf('a')
+       var nome = 'jorge sant ana'.replace('sant ana', 'lima')
+       var sbt = 'jorge sant ana'.substr(6, 4) //6 -> posiçao inicial, 4 -> quantidade de caracteres a ser recuperados
+       var mininusculo = 'jorge sant ana'.toLowerCase()
+       var maiusculo = 'jorge sant ana'.toUpperCase()
+       var noome = ' jorge sant ana '
+
+       document.write('O tamanho da string é: ' + str)
+       document.write('<br />')
+       document.write('O indice 7 é : ' + idx)
+       document.write('<br/>')
+       document.write('a ocorrência: ' + ocorr)
+       document.write('<br/>')
+       document.write('o resultado de replace foi: ' + nome)
+       document.write('<br/>')
+       document.write('o resultado de substr: ' + sbt)
+       document.write('<br/>')
+       document.write('mininusculo: ' + mininusculo)
+       document.write('<br/>')
+       document.write('maiusculo: ' + maiusculo)
+       document.write('<br/>')
+       document.write('o resultado da remoção de espaço foi: ' + '-' + noome.trim() + '-') //remove os espaços das extrimidades
+    </script>
+
+</body>
+
+</html>

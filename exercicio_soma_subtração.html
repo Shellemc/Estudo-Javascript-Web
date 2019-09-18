@@ -1,0 +1,51 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <h1>Exercicio Soma e Subtração</h1>
+
+    <script>
+
+        var primeiro_numero = prompt('digite o primeiro número: ') //pede o primeiro numero
+        var tipo_de_operacao = prompt('digite a operação desejada ex: (soma ou sub) : ') //pede o tipo de operação a ser feita
+        var segundo_numero = prompt('digite o segundo número: ') // pede o segundo numero
+
+
+        function calculo(primeiro_numero, segundo_numero, tipo_de_operacao) { //inicio da funcao
+            //logica do programa //casting
+            primeiro_numero = parseInt(primeiro_numero) //transforma o primeiro numero em inteiro
+            segundo_numero = parseInt(segundo_numero) //transforma o segundo numero em inteiro
+
+            var resultado = 0 //armazena o valor inicial de resultado para que depois seja chamada com outro valor
+
+            if (tipo_de_operacao == 'soma') {//inicio primeiro if
+                resultado = primeiro_numero + segundo_numero
+            }//fim primeiro if
+
+            if (tipo_de_operacao == 'sub') { //inicio segundo if
+                resultado = primeiro_numero - segundo_numero
+            } //fim segundo if
+
+            return resultado //retorna o valor de resultado
+
+
+
+        }//fim da funcao
+        document.write('o tipo de operação é: ' + tipo_de_operacao)
+        document.write('<br/>')
+        document.write('os numeros digitados foram: ' + primeiro_numero + ' e ' + segundo_numero)
+        document.write('<br/>')
+        document.write('Resultado é: ' + calculo(primeiro_numero, segundo_numero, tipo_de_operacao)) //mostra na tela o resultado final
+
+    </script>
+
+</body>
+
+</html>

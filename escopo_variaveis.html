@@ -1,0 +1,41 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções</title>
+</head>
+
+<body>
+
+    <h1>Escopo variaveis</h1>
+
+    <script>
+        var serie = 'the blacklist'
+
+        //escopo de bloco
+        if (true) {
+            var serie2 = 'a lista negra'
+            document.write(serie)
+        }
+
+        document.write(serie2)
+        document.write('<br />')
+
+        //ESCOPO DE FUNCAO
+        function x() {
+            var serie3 = 'temporada1'
+            document.write(serie)
+            document.write(serie2)
+        }
+
+        document.write(serie3)
+        document.write('<br />')
+
+        x()
+    </script>
+
+</body>
+
+</html>

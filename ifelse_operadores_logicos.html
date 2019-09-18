@@ -1,0 +1,64 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IfElse Operadores Logicos</title>
+</head>
+
+<body>
+
+    <h1>IfElse Operadores Logicos</h1>
+
+    <script>
+        /*
+        //true && true && false = false 
+        if ( 2 == 2 && 3 >= 1 && 'a' == 'b'){
+            document.write('Verdadeiro')
+        }else{
+            document.write('Falso')
+        }
+
+        document.write('<br />')
+
+        //true || true || false = true
+        if ( 2 == 2 || 3 >= 1 || 'a' == 'b'){
+            document.write('Verdadeiro')
+        }else{
+            document.write('Falso')
+        }
+
+        document.write('<br />')
+
+        //false = false
+        if (!(4 == 2)){
+            document.write('verdadeiro')
+        }else{
+            document.write('falso')
+        }
+        */
+
+
+        //pede a nota do aluno para ser comparada 
+        var nota = prompt('Digite a nota do aluno: ') //nota do aluno
+        var faltas = prompt('Digite a quantidade de faltas: ') //faltas do aluno
+
+
+        var media = 7 //media para ser aprovado
+        var faltas_maximas = 15 //quantidade maxima de faltas do ano
+
+
+        if(nota >= media && faltas <= faltas_maximas){
+            document.write('O aluno foi aprovado !!')
+        }
+        else{
+            document.write('o aluno foi reprovado !!')
+        }
+
+
+    </script>
+
+</body>
+
+</html>
