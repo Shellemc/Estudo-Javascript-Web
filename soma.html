@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Somando Números</title>
+        
+        <style>
+            /*PARTE DO CSS*/
+          body{
+              font: normal 18pt Arial;
+          }
+          input{
+              font: normal 18pt Arial;
+              width: 100px;
+          }
+          div#res{
+              margin-top: 20px;
+          }
+        </style>
+        
+        
+    </head>
+    <body>
+        <!--Titulo da Página-->
+        <h1>Somando Números</h1> 
+
+        <!--Campo de entrada para o primeiro número-->
+        <input type="number" name="txtn1" id="txtn1">
+        <!--Campo de entrada para o segundo número-->
+        <input type="number" name="txtn2" id="txtn2">
+        <!--Campo para o botao somar-->
+        <input type="button" value="somar" onclick= "somar()">
+
+        <div id="res">Resultado</div>
+       
+        <script src="som.js"></script>
+    </body>
+    
+</html>

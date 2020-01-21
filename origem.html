@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="widt-device-width, initial-scale=1.0">
+	<title>Naciolidade</title>
+
+	<style>
+		body{
+			font: normal 18pt Arial;
+		}
+		input{
+			font: normal 18pt Arial;
+			width: 100px;
+		}
+		div#res{
+			margin-top: 20px;
+		}
+	</style>
+
+	</head>
+
+	<body>
+		<h1>Sua naciolidade</h1>
+
+		Qual sua naciolidade: <input type="text" name="txtp" id="txtp">
+		<input type="button" value="verificar" onclick="search()">
+
+		<div id="res"></div>
+
+		<script>
+			function search(){
+
+				var txttt = window.document.getElementById('txtp')
+				var res = window.document.querySelector('div#res')
+				var v = String(txttt.value)
+
+				res.innerHTML = `<p>Sua naciolidade é <strong>${v}</stronp></p>`
+
+				if (v == 'brasil'){
+					res.innerHTML += `<p>Você é um de nós!</p>`
+				}else{
+					res.innerHTML += `<p>Você é um Estrangeiro</p`
+				}
+
+			}
+		</script>
+	</body>
+</html>
